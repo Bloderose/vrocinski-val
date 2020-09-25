@@ -75,7 +75,6 @@ h6 {
     transition: all 0.4s ease-in-out
 }
 
-
 /*Card css*/
 .flip-card {
     background-color: transparent;
@@ -261,10 +260,9 @@ h6 {
     padding: 1em 0 !important;
 }
 
-.page-title .heading {
-    font-size: 4rem;
+.big-title {
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-left: 20%;
     color: white;
 }
 
@@ -280,6 +278,7 @@ div > a {
     font-weight: bold;
 }
 .gradient {
+    padding: 1.5%;
     background: linear-gradient(90deg, rgba(226,36,36,1) 0%, rgba(83,2,2,1) 90%) !important;
 }
 
