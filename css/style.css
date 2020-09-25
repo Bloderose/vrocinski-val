@@ -68,6 +68,12 @@ h6 {
     font-weight: bold
 }
 
+.line-seperator{
+    width: auto;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(226,36,36,1) 0%, rgba(83,2,2,1) 90%) !important;
+}
+
 .btn {
     font-weight: bold;
     padding: .375rem 1rem;
@@ -202,6 +208,13 @@ h6 {
 /*.header .nav-item {*/
 /*    font-weight: bold*/
 /*}*/
+
+.mt-3{
+    margin-top: 3rem!important;
+}
+.secon-title{
+    padding-top: 3rem!important;
+}
 
 .header .nav-item.active .nav-link {
     color: rgba(0, 0, 0, 0.5)
