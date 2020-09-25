@@ -50,8 +50,8 @@ html {
 }
 
 body {
-    width: auto;
     color: var(--secondary);
+    overflow-x: hidden
 }
 
 a {
@@ -242,10 +242,8 @@ h6 {
 }
 
 .main-wrapper {
-    position: fixed;
     margin-left: var(--sidebar-width);
     background: #fff;
-    overflow-x: hidden;
 }
 
 .main-wrapper .container {
@@ -444,7 +442,7 @@ div > a {
 
 }
 
-@media (max-width:1200px) {
+@media (max-width: 991.98px) {
     .page-title {
         position: static;
     }
@@ -476,7 +474,7 @@ div > a {
 
     .main-wrapper {
         margin-left: 0;
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 }
 
