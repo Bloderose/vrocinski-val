@@ -242,7 +242,7 @@ h6 {
 }
 
 .main-wrapper {
-    position: relative;
+    position: fixed;
     margin-left: var(--sidebar-width);
     background: #fff;
     overflow-x: hidden;
