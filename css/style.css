@@ -47,13 +47,11 @@
 
 html {
     line-height: 1.15;
-    overflow-x: hidden;
 }
 
 body {
     width: auto;
     color: var(--secondary);
-    overflow-x: hidden;
 }
 
 a {
@@ -244,7 +242,7 @@ h6 {
 }
 
 .main-wrapper {
-    width: 100%;
+    position: relative;
     margin-left: var(--sidebar-width);
     background: #fff;
     overflow-x: hidden;
