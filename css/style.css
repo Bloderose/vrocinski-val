@@ -51,7 +51,7 @@ html {
 
 body {
     color: var(--secondary);
-    overflow-x: hidden
+    overflow-x:hidden;
 }
 
 a {
@@ -245,6 +245,7 @@ h6 {
     overflow: auto;
     margin-left: var(--sidebar-width);
     background: #fff;
+    overflow-x: hidden;
 }
 
 .main-wrapper .container {
