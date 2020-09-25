@@ -47,12 +47,13 @@
 
 html {
     line-height: 1.15;
+    overflow-x: hidden;
 }
 
 body {
     width: auto;
     color: var(--secondary);
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 a {
