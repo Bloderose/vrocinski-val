@@ -475,7 +475,8 @@ div > a {
     }
 
     .main-wrapper {
-        margin-left: 0
+        margin-left: 0;
+        overflow-x:hidden;
     }
 }
 
