@@ -50,6 +50,7 @@ html {
 }
 
 body {
+    width: auto;
     color: var(--secondary);
     overflow-x:hidden;
 }
