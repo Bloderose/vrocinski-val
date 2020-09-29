@@ -17,6 +17,41 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Theme CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $facebook = $('.facebook')
+            $twitter = $('.twitter')
+            $isOpen = true
+            $('.youtube').click(function () {
+
+                $(".socail_img_plus").addClass("clicked").delay(800).removeClass('clicked')
+
+                if ($isOpen) {
+                    $facebook.css("visibility", "hidden")
+                    $facebook.css("opacity", "0")
+                    $facebook.css("transition", "opacity 0.3s, visibility 0.3s")
+
+                    $twitter.css("visibility", "hidden")
+                    $twitter.css("opacity", "0")
+                    $twitter.css("transition", "opacity 0.3s, visibility 0.3s")
+                } else {
+                    $facebook.css("visibility", "visible")
+                    $facebook.css("opacity", "1")
+                    $facebook.css("transition", "opacity 0.3s, visibility 0.3s")
+
+                    $twitter.css("visibility", "visible")
+                    $twitter.css("opacity", "1")
+                    $twitter.css("transition", "opacity 0.3s, visibility 0.3s")
+                }
+                $isOpen = !$isOpen
+            });
+        });
+    </script>
+
 
 </head>
 
@@ -50,23 +85,26 @@
 
 <div class="main-wrapper">
     <!-- Navigation -->
+    <div class="header_top"></div>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark gradient static-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <h2 class="big-title">VROČINSKI VALl</h2>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Domov
+                        <a class="nav-link" href="#o-nas">Domov
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">O nas</a>
+                        <a class="nav-link" href="#clani">O nas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Nastopi</a>
@@ -76,9 +114,20 @@
         </div>
     </nav>
 
+
     <article class="content px-3 py-5 p-md-5">
         <div class='container'>
-            <h2>O nas</h2>
+
+            <div class="icon-bar">
+                <a href="#" class="facebook"><img src="images/facebook.png" alt="social_logo"
+                                                  class="socail_img"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="twitter"><img src="images/instagram.png" alt="social_logo"
+                                                 class="socail_img"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="youtube"><img src="images/plus.png" alt="social_logo"
+                                                 class="socail_img_plus"><i class="fa fa-youtube"></i></a>
+            </div>
+
+            <h2 id="o-nas">O nas</h2>
             <hr class="line-seperator">
             <p class="mt-3 lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
                 dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
@@ -128,7 +177,7 @@
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
             </section>
-            <h2 class="secon-title">Člani skupine</h2>
+            <h2 class="secon-title" id="clani">Člani skupine</h2>
             <hr class="line-seperator">
             <div class="row row-cols-1 mt-4 row-cols-md-2">
                 <div class="col mb-4">
