@@ -90,7 +90,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark gradient static-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <h2 class="big-title">VROČINSKI VALl</h2>
+                <h2 class="big-title">VROČINSKI VAL</h2>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -119,12 +119,12 @@
         <div class='container'>
 
             <div class="icon-bar">
-                <a href="#" class="facebook"><img src="images/facebook.png" alt="social_logo"
-                                                  class="socail_img"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="twitter"><img src="images/instagram.png" alt="social_logo"
-                                                 class="socail_img"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="youtube"><img src="images/plus.png" alt="social_logo"
-                                                 class="socail_img_plus"><i class="fa fa-youtube"></i></a>
+                <a class="facebook"><img src="images/facebook.png" alt="social_logo"
+                                         class="socail_img"><i class="fa fa-facebook"></i></a>
+                <a class="twitter"><img src="images/instagram.png" alt="social_logo"
+                                        class="socail_img"><i class="fa fa-twitter"></i></a>
+                <a class="youtube"><img src="images/plus.png" alt="social_logo"
+                                        class="socail_img_plus"><i class="fa fa-youtube"></i></a>
             </div>
 
             <h2 id="o-nas">O nas</h2>
@@ -253,6 +253,58 @@
             </div>
         </div>
     </article>
+
+    <section class="mb-4" style="background: #434242">
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4" style="color: white">Kontaktirajte nas</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5"  style="color: white">Ali imate vprašanje? Nam ga lahko zaupate z veseljem vam bomo odgovorili</p>
+        <div class="container">
+                <!--Grid column-->
+                <div class="col-md-12 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                              class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                    </form>
+
+                    <button type="submit" class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Submmit</button>
+        </div>
+    </section>
+
 
     <footer class="footer text-center py-2 theme-bg-dark">
         <p class="copyright"><a href="https://youtube.com/FollowAndrew">© Vročinski val</a></p>
