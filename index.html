@@ -60,6 +60,12 @@
                 });
             });
 
+            setTimeout(function(){
+                $("#splash_con").remove()
+                $("#sp_el").remove()
+                //....and whatever else you need to do
+            }, 3000);
+
         });
     </script>
 </head>
@@ -91,12 +97,12 @@
         </div>
     </nav>
 </header>-->
+<div class="splash_container" id="splash_con">
+    <h1 class="splash_el" id="sp_el">Vročinski val</h1>
+</div>
 
 <div class="main-wrapper">
     <!-- Splash screen    -->
-    <div id="splash_continer">
-        <h1 id="splash_title">Vročinski val</h1>
-    </div>
 
     <!-- Navigation -->
     <div class="header_top"></div>
